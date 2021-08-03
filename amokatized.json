@@ -10,6 +10,20 @@
 				"Destructive Stinger",
 				"Wing Wind"
 			]
+		},
+		{
+			"id": 1,
+			"name": "Banana Boom Boom",
+			"image": "banana-boom-boom.png",
+			"serve": "Queen Banana",
+			"power_and_ability": ["Transforming people into bananas"]
+		},
+		{
+			"id": 2,
+			"name": "Dormant Sentimonster",
+			"image": "dormant-sentimonster.png",
+			"serve": "Master Weng Fu",
+			"power_and_ability": ["Amphibian Physiology"]
 		}
 	]
 }
