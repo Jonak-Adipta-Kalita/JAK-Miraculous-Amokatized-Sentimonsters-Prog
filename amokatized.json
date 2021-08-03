@@ -1,0 +1,15 @@
+{
+	"monsters": [
+		{
+			"id": 0,
+			"name": "Butterfly Sentimonster",
+			"image": "butterfly-sentimonster.png",
+			"serve": "Hawk Moth",
+			"power_and_ability": [
+				"Fast-Flying",
+				"Destructive Stinger",
+				"Wing Wind"
+			]
+		}
+	]
+}
