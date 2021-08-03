@@ -33,6 +33,13 @@ const selectVillain = async (id) => {
 const displayPopup = (sentiMonstere, id) => {	
 	const image = `./images/${sentiMonstere.monsters[id - 1].image}`;
 	const power_and_ability = Array(sentiMonstere.monsters[id - 1].power_and_ability).map((powerandability) => powerandability.join(", "));
+	
+	if (sentiMonstere.monsters[id - 1].power_and_ability[0] === null) {
+		power_and_abilityHTML_String = "";
+	} else {
+		power_and_abilityHTML_String = `<small>Power and Ability(s): </small>${power_and_ability}`;
+	}
+	
 
 	const htmlString = `
 		<div class="popup">
@@ -43,7 +50,7 @@ const displayPopup = (sentiMonstere, id) => {
 					${sentiMonstere.monsters[id - 1].id + 1}. ${sentiMonstere.monsters[id - 1].name}
 				</h2>
 				<p><small>Serve: </small>${sentiMonstere.monsters[id - 1].serve}</p>
-				<p><small>Power and Ability(s): </small>${power_and_ability}</p>
+				<p>${power_and_abilityHTML_String}</p>
 			</div>
 		</div>
 	`;

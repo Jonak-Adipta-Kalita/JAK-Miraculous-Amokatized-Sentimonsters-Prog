@@ -76,6 +76,34 @@
 			"image": "reflekdoll.png",
 			"serve": "Reflekta",
 			"power_and_ability": ["Transforming people into replicas of Reflekta"]
+		},
+		{
+			"id": 9,
+			"name": "Mega Leech",
+			"image": "mega-leech.png",
+			"serve": "Malediktator",
+			"power_and_ability": [null]
+		},
+		{
+			"id": 10,
+			"name": "Sentinino",
+			"image": "sentinino.png",
+			"serve": "Shadow Moth",
+			"power_and_ability": [null]
+		},
+		{
+			"id": 11,
+			"name": "Sentibubbler",
+			"image": "sentibubbler.png",
+			"serve": "Shadow Moth",
+			"power_and_ability": ["Bubble manipulation"]
+		},
+		{
+			"id": 12,
+			"name": "Sentialec",
+			"image": "sentialec.png",
+			"serve": "Shadow Moth",
+			"power_and_ability": [null]
 		}
 	]
 }
