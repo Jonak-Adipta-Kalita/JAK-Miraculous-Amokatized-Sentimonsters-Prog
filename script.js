@@ -15,7 +15,7 @@ const fetchSentiMonsters = async () => {
 const displaySentiMonsters = (sentiMonster) => {
     const sentiMonsterHTMLString = sentiMonster
         .map((sentiMonstere) => (`
-			<li class="card" onclick="selectVillain(${sentiMonstere.id})">
+			<li class="card" onclick="selectSentiMonsters(${sentiMonstere.id})">
 				<img class="card-image" src="${sentiMonstere.image}"/>
 				<h2 class="card-title">${sentiMonstere.id}. ${sentiMonstere.name}</h2>
 			</li>
@@ -23,7 +23,7 @@ const displaySentiMonsters = (sentiMonster) => {
     dex.innerHTML = sentiMonsterHTMLString;
 };
 
-const selectVillain = async (id) => {
+const selectSentiMonsters = async (id) => {
 	const url = `\amokatized.json`;
 	const res = await fetch(url);
 	const sentiMonstere = await res.json();
