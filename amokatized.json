@@ -24,6 +24,58 @@
 			"image": "dormant-sentimonster.png",
 			"serve": "Master Weng Fu",
 			"power_and_ability": ["Amphibian Physiology"]
+		},
+		{
+			"id": 3,
+			"name": "Guiltrip",
+			"image": "guiltrip.png",
+			"serve": "Reflekta",
+			"power_and_ability": [
+				"Pocket Dimension Manipulation",
+				"Causing extreme guilt",
+				"Creating clones of Reflekta",
+				"Releasing purple/magenta bubbles"
+			]
+		},
+		{
+			"id": 4,
+			"name": "Ladybug Sentimonster",
+			"image": "ladybug-sentimonster.png",
+			"serve": "Mayura",
+			"power_and_ability": ["Senti Charm"]
+		},
+		{
+			"id": 5,
+			"name": "Light Eye",
+			"image": "light-eye.png",
+			"serve": "Truth",
+			"power_and_ability": ["Immobilizing anyone using its light beams"]
+		},
+		{
+			"id": 6,
+			"name": "Lollipop Sentimonster",
+			"image": "lollipop-sentimonster.png",
+			"serve": "August",
+			"power_and_ability": ["Strength"]
+		},
+		{
+			"id": 7,
+			"name": "Optigami",
+			"image": "optigami.png",
+			"serve": "Mayura and Hawk Moth",
+			"power_and_ability": [
+				"Flying",
+				"Merging with objects",
+				"Spying on people",
+				"Connection to Nathalie's tablet"
+			]
+		},
+		{
+			"id": 8,
+			"name": "Reflekdoll",
+			"image": "reflekdoll.png",
+			"serve": "Reflekta",
+			"power_and_ability": ["Transforming people into replicas of Reflekta"]
 		}
 	]
 }
