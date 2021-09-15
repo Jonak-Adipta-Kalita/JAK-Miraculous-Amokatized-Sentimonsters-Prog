@@ -104,6 +104,13 @@
 			"image": "sentialec.png",
 			"serve": "Shadow Moth",
 			"power_and_ability": [null]
+		},
+		{
+			"id": 13,
+			"name": "Hack San",
+			"image": "hack-san.png",
+			"serve": "Shadow Moth",
+			"power_and_ability": ["Hack Anything"]
 		}
 	]
 }
