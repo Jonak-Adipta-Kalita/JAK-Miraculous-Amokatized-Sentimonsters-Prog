@@ -111,6 +111,13 @@
 			"image": "hack-san.png",
 			"serve": "Shadow Moth",
 			"power_and_ability": ["Hack Anything"]
+		},
+		{
+			"id": 14,
+			"name": "Kuro Neko",
+			"image": "kuro-neko.png",
+			"serve": "Rhythm",
+			"power_and_ability": ["Powers of a Cat"]
 		}
 	]
 }
