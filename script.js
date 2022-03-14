@@ -1,13 +1,18 @@
 const dex = document.getElementById('dex');
 const fetchSentiMonsters = async () => {
-    const url = "/amokatized.json";
-	const res = await fetch(url);
+    const res = await fetch("https://jak_api.p.rapidapi.com/miraculous", {
+		"method": "GET",
+		"headers": {
+			"x-rapidapi-host": "jak_api.p.rapidapi.com",
+			"x-rapidapi-key": "d3474315fcmshe6f03eb826f16bcp181f82jsn7d262d2601be"
+		}
+	});
 	const data = await res.json();
 	console.log(data);
-	const sentiMonsters = data.monsters.map((result, index) => ({
+	const sentiMonsters = data.amokatized.map((result, index) => ({
 		...result,
 		id: index + 1,
-		image: `./images/${result.image}`
+		image: `https://jak-api.vercel.app/${result.image}`
 	}));
 	displaySentiMonsters(sentiMonsters);
 };
@@ -24,17 +29,22 @@ const displaySentiMonsters = (sentiMonster) => {
 };
 
 const selectSentiMonsters = async (id) => {
-	const url = `\amokatized.json`;
-	const res = await fetch(url);
+	const res = await fetch("https://jak_api.p.rapidapi.com/miraculous", {
+		"method": "GET",
+		"headers": {
+			"x-rapidapi-host": "jak_api.p.rapidapi.com",
+			"x-rapidapi-key": "d3474315fcmshe6f03eb826f16bcp181f82jsn7d262d2601be"
+		}
+	});
 	const sentiMonstere = await res.json();
 	displayPopup(sentiMonstere, id);
 };
 
 const displayPopup = (sentiMonstere, id) => {	
-	const image = `./images/${sentiMonstere.monsters[id - 1].image}`;
-	const power_and_ability = Array(sentiMonstere.monsters[id - 1].power_and_ability).map((powerandability) => powerandability.join(", "));
+	const image = `https://jak-api.vercel.app/${sentiMonstere.amokatized[id - 1].image}`;
+	const power_and_ability = Array(sentiMonstere.amokatized[id - 1].power_and_ability).map((powerandability) => powerandability.join(", "));
 	
-	if (sentiMonstere.monsters[id - 1].power_and_ability[0] === null) {
+	if (sentiMonstere.amokatized[id - 1].power_and_ability[0] === null) {
 		power_and_abilityHTML_String = "";
 	} else {
 		power_and_abilityHTML_String = `<small>Power and Ability(s): </small>${power_and_ability}`;
@@ -47,9 +57,9 @@ const displayPopup = (sentiMonstere, id) => {
 			<div class="card">
 				<img class="card-image" src="${image}" />
 				<h2 class="card-title">
-					${sentiMonstere.monsters[id - 1].id + 1}. ${sentiMonstere.monsters[id - 1].name}
+					${sentiMonstere.amokatized[id - 1].id + 1}. ${sentiMonstere.amokatized[id - 1].name}
 				</h2>
-				<p><small>Serve: </small>${sentiMonstere.monsters[id - 1].serve}</p>
+				<p><small>Serve: </small>${sentiMonstere.amokatized[id - 1].serve}</p>
 				<p>${power_and_abilityHTML_String}</p>
 			</div>
 		</div>
